@@ -1,33 +1,35 @@
 package com.esprit.microservices.communityconnect;
 
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import java.io.Serializable;
 import java.util.Date;
 
+@Entity
 public class Evenement implements Serializable {
-    private static final long serialVersionUID = 6
+    private static final long serialVersionUID = 6 ;
             @Id
             @GeneratedValue
-    private int idE;
+    private Integer idE;
     private String nom, description,lieu, organisateur;
     private Date date ;
-    private capacité maximale;
+    private int maxcapacite;
 
 
     public Evenement() {
     }
 
-    public Evenement(String nom, String description, String lieu, String organisateur, Date date, capacité maximale) {
+    public Evenement(String nom, String description, String lieu, String organisateur, Date date, int maxcapacite) {
         this.nom = nom;
         this.description = description;
         this.lieu = lieu;
         this.organisateur = organisateur;
         this.date = date;
-        this.maximale = maximale;
+        this.maxcapacite = maxcapacite;
     }
 
-    public int getIdE() {
+    public Integer getIdE() {
         return idE;
     }
 
@@ -51,8 +53,8 @@ public class Evenement implements Serializable {
         return date;
     }
 
-    public capacité getMaximale() {
-        return maximale;
+    public int getMaxcapacite() {
+        return maxcapacite;
     }
 
     public void setNom(String nom) {
@@ -75,7 +77,7 @@ public class Evenement implements Serializable {
         this.date = date;
     }
 
-    public void setMaximale(capacité maximale) {
-        this.maximale = maximale;
+    public void setMaxcapacite(int maxcapacite) {
+        this.maxcapacite = maxcapacite;
     }
 }
