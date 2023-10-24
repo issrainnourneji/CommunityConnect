@@ -4,36 +4,109 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="52f14a24-3bdc-404b-827c-2c2cc5c1000e" name="Default Changelist" comment="" />
+    <list default="true" id="83c2c817-2752-495c-86f6-2d11c12257dd" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectId" id="2WrUD5GxQ4BAlmIgttQZb596Jtk" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="Enum" />
+      </list>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2IHsi6syTPqVFINXU7UWifeizGZ" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;4be9f357499a69d2db55f14354b6d35a&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="Ashraf666Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="Ashraf666" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="tn.esprit.Ashraf666.Ashraf666Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="52f14a24-3bdc-404b-827c-2c2cc5c1000e" name="Default Changelist" comment="" />
-      <created>1697490076209</created>
+      <changelist id="83c2c817-2752-495c-86f6-2d11c12257dd" name="Changes" comment="" />
+      <created>1669849966964</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1697490076209</updated>
-      <workItem from="1697490079695" duration="263000" />
+      <updated>1669849966964</updated>
+      <workItem from="1669849968203" duration="10214000" />
+      <workItem from="1669890225325" duration="9219000" />
+      <workItem from="1669905114481" duration="3408000" />
+      <workItem from="1669919075143" duration="3403000" />
+      <workItem from="1669931284641" duration="4090000" />
+      <workItem from="1669941063325" duration="16929000" />
+      <workItem from="1669982834719" duration="3254000" />
+      <workItem from="1670024798141" duration="66000" />
+      <workItem from="1670083679306" duration="962000" />
+      <workItem from="1670245798665" duration="3048000" />
+      <workItem from="1670286350123" duration="95000" />
+      <workItem from="1670319815072" duration="433000" />
+      <workItem from="1670320870017" duration="6140000" />
+      <workItem from="1670332313458" duration="48000" />
+      <workItem from="1670335535160" duration="82000" />
+      <workItem from="1670336697686" duration="13000" />
+      <workItem from="1670340188939" duration="97000" />
+      <workItem from="1670352082837" duration="3058000" />
+      <workItem from="1670369493693" duration="1870000" />
+      <workItem from="1670374934328" duration="643000" />
+      <workItem from="1670376938045" duration="424000" />
+      <workItem from="1670378473744" duration="708000" />
+      <workItem from="1698187960834" duration="2292000" />
+      <workItem from="1698190278912" duration="44000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
