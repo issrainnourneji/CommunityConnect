@@ -14,6 +14,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { GestionRessourceModule } from './gestion-ressource/gestion-ressource.module';
 
 
 @NgModule({
@@ -28,7 +29,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-
+    GestionRessourceModule,
     GestionDepartementModule,
     ReactiveFormsModule,
     HttpClientModule,
