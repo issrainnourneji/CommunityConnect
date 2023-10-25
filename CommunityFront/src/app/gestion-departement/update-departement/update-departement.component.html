@@ -1,0 +1,67 @@
+<form [formGroup]="reactiveForm">
+    <div class="col-sm-12 col-xl-10">
+        <div class="bg-light rounded h-100 p-4">
+  <div class="card-body">
+      <h4 class="card-title">Nom Evenement</h4>
+      <div class="mt-4">
+          <div class="form-group">
+              <input type="text"formControlName="nom" class="form-control" name="nom"  id="nom">
+          </div>
+          <div [ngStyle]="{'color':'red'}" class="alter alter-danger" id="updateField" *ngIf="nom?.errors?.['required'] && nom?.touched" > nom is required</div>
+
+      </div >
+  </div>
+  <div class="card-body">
+    <h4 class="card-title">Description Evenement</h4>
+    <div class="mt-4">
+        <div class="form-group">
+            <input type="text"formControlName="description" class="form-control" name="description"  id="description">
+        </div>
+        <div [ngStyle]="{'color':'red'}" class="alter alter-danger" id="updateField" *ngIf="description?.errors?.['required'] && description?.touched" > description is required</div>
+
+    </div >
+</div>
+<div class="card-body">
+  <h4 class="card-title">Lieu Evenement</h4>
+  <div class="mt-4">
+      <div class="form-group">
+          <input type="text"formControlName="lieu" class="form-control" name="lieu"  id="lieu">
+      </div>
+      <div [ngStyle]="{'color':'red'}" class="alter alter-danger" id="updateField" *ngIf="lieu?.errors?.['required'] && lieu?.touched" > lieu is required</div>
+
+  </div >
+</div>
+<div class="card-body">
+  <h4 class="card-title">Organisateur Evenement</h4>
+  <div class="mt-4">
+      <div class="form-group">
+          <input type="text"formControlName="organisateur" class="form-control" name="organisateur"  id="organisateur">
+      </div>
+      <div [ngStyle]="{'color':'red'}" class="alter alter-danger" id="updateField" *ngIf="organisateur?.errors?.['required'] && organisateur?.touched" > organisateur is required</div>
+
+  </div >
+</div>
+<div class="card-body">
+  <h4 class="card-title">Date Evenement</h4>
+  <div class="mt-4">
+      <div class="form-group">
+          <input type="date"formControlName="date" class="form-control" name="date"  id="date">
+      </div>
+      <div [ngStyle]="{'color':'red'}" class="alter alter-danger" id="updateField" *ngIf="date?.errors?.['required'] && date?.touched" > date is required</div>
+
+  </div >
+</div>
+<div class="card-body">
+  <h4 class="card-title">Capacite Evenement</h4>
+  <div class="mt-4">
+      <div class="form-group">
+          <input type="number"formControlName="maxcapacite" class="form-control" name="maxcapacite"  id="maxcapacite">
+      </div>
+      <div [ngStyle]="{'color':'red'}" class="alter alter-danger" id="updateField" *ngIf="maxcapacite?.errors?.['required'] && maxcapacite?.touched" > capacite is required</div>
+
+  </div >
+</div>
+  <button type="submit" class="btn btn-primary" (click)="update()">update </button>
+        </div>
+    </div>
+  </form>

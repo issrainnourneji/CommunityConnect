@@ -1,0 +1,68 @@
+<form [formGroup]="reactiveForm" >
+
+    <div class="col-sm-12 col-xl-10">
+        <div class="bg-light rounded h-100 p-4">
+      <h4 >Nom Evenement</h4>
+      <div class="mt-6">
+          <div>
+              <input type="text"formControlName="nom" class="form-control" name="nom"  id="nom">
+          </div>
+          <div [ngStyle]="{'color':'red'}"  *ngIf="nom?.errors?.['required'] && nom?.touched"> NomEvenement is required</div>
+
+      </div >
+  </div>
+  <div class="bg-light rounded h-100 p-4">
+    <h4 >Description Evenement</h4>
+    <div class="mt-6">
+        <div>
+            <input type="text"formControlName="description" class="form-control" name="description"  id="description">
+        </div>
+        <div [ngStyle]="{'color':'red'}"  *ngIf="description?.errors?.['required'] && description?.touched"> DescriptionEvenement is required</div>
+
+    </div >
+</div>
+<div class="bg-light rounded h-100 p-4">
+  <h4 >Lieu Evenement</h4>
+  <div class="mt-6">
+      <div>
+          <input type="text"formControlName="lieu" class="form-control" name="lieu"  id="lieu">
+      </div>
+      <div [ngStyle]="{'color':'red'}"  *ngIf="lieu?.errors?.['required'] && lieu?.touched"> LieuEvenement is required</div>
+
+  </div >
+</div>
+<div class="bg-light rounded h-100 p-4">
+  <h4 >Organisateur Evenement</h4>
+  <div class="mt-6">
+      <div>
+          <input type="text"formControlName="organisateur" class="form-control" name="organisateur"  id="organisateur">
+      </div>
+      <div [ngStyle]="{'color':'red'}"  *ngIf="organisateur?.errors?.['required'] && organisateur?.touched"> OrganisateurEvenement is required</div>
+
+  </div >
+</div>
+<div class="bg-light rounded h-100 p-4">
+  <h4 >Date Evenement</h4>
+  <div class="mt-6">
+      <div>
+          <input type="date"formControlName="date" class="form-control" name="date"  id="date">
+      </div>
+      <div [ngStyle]="{'color':'red'}"  *ngIf="date?.errors?.['required'] && date?.touched"> DateEvenement is required</div>
+
+  </div >
+</div>
+<div class="bg-light rounded h-100 p-4">
+  <h4 >Capacite Evenement</h4>
+  <div class="mt-6">
+      <div>
+          <input type="number"formControlName="maxcapacite" class="form-control" name="maxcapacite"  id="maxcapacite">
+      </div>
+      <div [ngStyle]="{'color':'red'}"  *ngIf="maxcapacite?.errors?.['required'] && maxcapacite?.touched"> CapaciteEvenement is required</div>
+
+  </div >
+</div>
+  <button type="submit" class="btn btn-primary" (click)="Add()" >Ajouter</button>
+    </div>
+  </form>
+
+
