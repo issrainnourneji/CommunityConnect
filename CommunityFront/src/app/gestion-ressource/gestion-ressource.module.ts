@@ -23,6 +23,9 @@ import { GestionRessourceRouting } from './gestion-ressource-routing.module';
     FormsModule,
     ReactiveFormsModule,
     GestionRessourceRouting
+  ],
+  exports : [
+    ListRessourceComponent
   ]
 })
 export class GestionRessourceModule { }

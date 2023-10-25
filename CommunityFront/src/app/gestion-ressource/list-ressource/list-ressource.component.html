@@ -1,1 +1,38 @@
-<p>list-ressource works!</p>
+<div class="col-12">
+    <div class="bg-light rounded h-100 p-4">
+        <h4 class="mb-4">Table Ressource</h4>
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Id </th>
+                        <th scope="col">Name </th>
+                        <th scope="col">type </th>
+                        <th scope="col">location </th>
+                        <th scope="col">owner </th>
+                    </tr>
+                </thead>
+                <tbody>
+                  <tr role="row" class="odd" *ngFor="let l of list">
+                    <td>{{l.idR}}</td>
+                    <td>{{l.name}}</td>
+                    <td>{{l.type}}</td>
+                    <td>{{l.location}}</td>
+                    <td>{{l.owner}}</td>
+                    <td>
+                      <button type="button" style="margin-right: 20px;" (click)="DeleteRessource(l.idR)" class="btn btn-danger" data-toggle="modal" data-target="#danger-alert-modal">Delete</button>
+                      <a [routerLink]="['update',l.idR]" class="btn waves-effect waves-light btn-warning">
+                       Edit</a>
+  
+                  </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+      </div>
+                      <a [routerLink]="['add']">Ajouter Ressource</a>
+  </div>
+  
+  
+  
+  

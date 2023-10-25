@@ -12,23 +12,23 @@ export class RessourceServiceService {
   urlDel='http://localhost:8081/AppWebDist/ressource/remove';
   urlById ='http://localhost:8081/AppWebDist/ressource/get';
   urlup='http://localhost:8081/AppWebDist/ressource/update';
-  Departement=[];
+  Ressource=[];
   constructor(private http: HttpClient) { }
   getData():Observable<Ressource[]> {
     return this.http.get<Ressource[]>(this.urlApi);
 }
-  AddDepart(Departement: Ressource):Observable<Ressource>{
-    return this.http.post<Ressource>(this.urlAdd,Departement)
+  AddRessource(Ressource: Ressource):Observable<Ressource>{
+    return this.http.post<Ressource>(this.urlAdd,Ressource)
    }
-   deleteUser(id:Number){
+   deleteRessource(id:Number){
     return this.http.delete(this.urlDel+'/'+id);
   }
-  getDepartById(id: Number){
+  getRessourceById(id: Number){
     return this.http.get<Ressource>(this.urlById+'/'+id);
   }
-  UpdateDepart(departement:Ressource){
+  UpdateRessource(Ressource:Ressource){
     alert("success update");
-    return this.http.put<Ressource>(this.urlup, departement);
+    return this.http.put<Ressource>(this.urlup, Ressource);
   }
 
 }

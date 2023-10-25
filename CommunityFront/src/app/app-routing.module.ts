@@ -10,6 +10,10 @@ const routes: Routes = [
     path: 'listEvent',
     loadChildren:() =>import('./gestion-departement/gestion-departement.module').then(m => m.GestionDepartementModule)
     },
+    {
+      path: 'Ressource',
+      loadChildren:() =>import('./gestion-ressource/gestion-ressource.module').then(m => m.GestionRessourceModule)
+      },
     {path: '**', component: NotFoundComponent}
 
 
