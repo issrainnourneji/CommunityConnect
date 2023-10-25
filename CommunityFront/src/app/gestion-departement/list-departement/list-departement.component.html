@@ -1,0 +1,42 @@
+<div class="col-12">
+  <div class="bg-light rounded h-100 p-4">
+      <h4 class="mb-4">Table Evenements</h4>
+      <div class="table-responsive">
+          <table class="table">
+              <thead>
+                  <tr>
+                      <th scope="col">Id </th>
+                      <th scope="col">Nom </th>
+                      <th scope="col">Description </th>
+                      <th scope="col">Lieu </th>
+                      <th scope="col">Organisateur </th>
+                      <th scope="col">Date </th>
+                      <th scope="col">Capacite </th>
+
+                  </tr>
+              </thead>
+              <tbody>
+                <tr role="row" class="odd" *ngFor="let l of list">
+                  <td>{{l.idE}}</td>
+                  <td>{{l.nom}}</td>
+                  <td>{{l.description}}</td>
+                  <td>{{l.lieu}}</td>
+                  <td>{{l.organisateur}}</td>
+                  <td>{{l.date}}</td>
+                  <td>{{l.maxcapacite}}</td>
+                  <td>
+                    <button type="button" style="margin-right: 20px;" (click)="DeleteDepart(l.idE)" class="btn btn-danger" data-toggle="modal" data-target="#danger-alert-modal">Delete</button>
+                    <a [routerLink]="['update',l.idE]" class="btn waves-effect waves-light btn-warning">
+                     Edit</a>
+
+                </td>
+              </tr>
+              </tbody>
+          </table>
+      </div>
+    </div>
+                    <a [routerLink]="['add']">Ajouter Evenement</a>
+</div>
+
+
+
