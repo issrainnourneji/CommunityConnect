@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="52f14a24-3bdc-404b-827c-2c2cc5c1000e" name="Default Changelist" comment="Fix" />
+    <list default="true" id="52f14a24-3bdc-404b-827c-2c2cc5c1000e" name="Default Changelist" comment="Fix">
+      <change beforePath="$PROJECT_DIR$/Ashraf666/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Ashraf666/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CommunityConnect/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/CommunityConnect/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crud_Ressouces_chedi/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Crud_Ressouces_chedi/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gestion-user/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gestion-user/src/main/resources/application.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,7 +57,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698258173758</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Fix">
+      <created>1698264637359</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1698264637359</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

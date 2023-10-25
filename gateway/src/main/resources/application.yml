@@ -17,15 +17,33 @@ spring:
       routes:
         ## user module
         - id: user
-          uri: http://localhost:8086
+          uri: http://localhost:8091
           predicates:
             - Path=/user/**
           filters:
             - StripPrefix=1
+        ## module resource
+        - id: resource
+          uri: http://localhost:8092
+          predicates:
+            - Path=/resource/**
+          filters:
+            - StripPrefix=1
 
-
-
-
+        ## module event
+        - id: event
+          uri: http://localhost:8093
+          predicates:
+            - Path=/http/**
+          filters:
+            - StripPrefix=1
+        ## module club
+        - id: club
+          uri: http://localhost:8094
+          predicates:
+            - Path=/http/**
+          filters:
+            - StripPrefix=1
 server:
   port: 9999
 
