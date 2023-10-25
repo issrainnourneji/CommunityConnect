@@ -1,0 +1,11 @@
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enable: true
+      routes:
+        - id: evenement-s
+          uri: http://localhost:8084/
+          predicates:
+            - Path=/evenements/**
