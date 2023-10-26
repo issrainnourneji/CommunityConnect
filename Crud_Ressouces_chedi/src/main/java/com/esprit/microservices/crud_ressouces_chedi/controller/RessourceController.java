@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.persistence.Entity;
 import java.util.List;
-
+@CrossOrigin(origins = "http://localhost:4200")
 @AllArgsConstructor
 @Slf4j
 @RequestMapping("ressource")

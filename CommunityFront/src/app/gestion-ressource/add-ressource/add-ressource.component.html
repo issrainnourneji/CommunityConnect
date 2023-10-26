@@ -1,1 +1,88 @@
-<p>add-ressource works!</p>
+<form [formGroup]="reactiveForm">
+  <div class="col-sm-12 col-xl-10">
+    <div class="bg-light rounded h-100 p-4">
+      <h4>Ressource Name</h4>
+      <div class="mt-6">
+        <div>
+          <input
+            type="text"
+            formControlName="name"
+            class="form-control"
+            name="name"
+            id="name"
+          />
+        </div>
+        <div
+          [ngStyle]="{ color: 'red' }"
+          *ngIf="name?.errors?.['required'] && name?.touched"
+        >
+          Ressource Name is required
+        </div>
+      </div>
+    </div>
+    <div class="bg-light rounded h-100 p-4">
+      <h4>Ressource Type</h4>
+      <div class="mt-6">
+        <div>
+          <input
+            type="text"
+            formControlName="type"
+            class="form-control"
+            name="type"
+            id="type"
+          />
+        </div>
+        <div
+          [ngStyle]="{ color: 'red' }"
+          *ngIf="type?.errors?.['required'] && type?.touched"
+        >
+          Ressource Type is required
+        </div>
+      </div>
+    </div>
+    <div class="bg-light rounded h-100 p-4">
+      <h4>Ressource Location</h4>
+      <div class="mt-6">
+        <div>
+          <input
+            type="text"
+            formControlName="location"
+            class="form-control"
+            name="location"
+            id="location"
+          />
+        </div>
+        <div
+          [ngStyle]="{ color: 'red' }"
+          *ngIf="location?.errors?.['required'] && location?.touched"
+        >
+          Ressource Location is required
+        </div>
+      </div>
+    </div>
+    <div class="bg-light rounded h-100 p-4">
+      <h4>Ressource Owner</h4>
+      <div class="mt-6">
+        <div>
+          <input
+            type="text"
+            formControlName="owner"
+            class="form-control"
+            name="owner"
+            id="owner"
+          />
+        </div>
+        <div
+          [ngStyle]="{ color: 'red' }"
+          *ngIf="owner?.errors?.['required'] && owner?.touched"
+        >
+          Ressource Owner is required
+        </div>
+      </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary" (click)="Add()">
+      Add Ressource 
+    </button>
+  </div>
+</form>
